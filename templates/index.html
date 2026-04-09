@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deteksi Fraud</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>💳 Deteksi Fraud Transaksi</h1>
+
+    <form action="/predict" method="post">
+        <input type="text" name="f1" placeholder="Feature 1" required>
+        <input type="text" name="f2" placeholder="Feature 2" required>
+        <input type="text" name="f3" placeholder="Feature 3" required>
+
+        <!-- Tambahkan sesuai jumlah fitur -->
+        
+        <button type="submit">Prediksi</button>
+    </form>
+</div>
+
+</body>
+</html>
